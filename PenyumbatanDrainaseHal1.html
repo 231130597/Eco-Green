@@ -45,7 +45,7 @@
             margin: 5px;
             margin-left: 20px;
         }
-        img.sampah{
+        img.drainase{
             width: 200px;
             height: 200px;
             border-radius: 20px;
@@ -71,6 +71,7 @@
         div.container2{
             display: flex;
             text-align: center;
+            margin-left: 250px;
         }
         div.text-container{
             display: flex;
@@ -132,10 +133,7 @@
         p.description{
             line-height: 15px;
         }
-        img.t1{
-            width: 30px;
-            height: 30px;
-        }
+        
         img.t{
             width: 100px;
             height: 100px;
@@ -158,21 +156,14 @@
             font-size: 12px;
             text-align: center;
         }
-        img.lapor{
-            width: 25px;
-            height: 25px;
-        }
+
         div.lapor{
             text-align: center;
             width: 200px;
             height: 30px;
             margin-top: 40px;
             margin-left: 400px;
-            background-color: rgb(22, 24, 123);
-            border-radius: 10px;
-        }
-        h5{
-            color: white;
+            border-radius: 15px;
         }
     </style>
     <title>Document</title>
@@ -181,15 +172,15 @@
     <div class="container">
         <div class="side2">
             <div class="other">
-                <img class="awan" src="./awanmatahari.jpeg" alt="">
+                <img class="awan" src="./awan.jpeg" alt="">
                 <h3 class="center">32°C</h3>
                 <h4 class="center">Berawan</h4>
             </div>
         <ul class="list">
-        <li class="list">Home</li>
-        <li class="list">Fitur</li>
-        <li class="list">Profile</li>
-        <li class="list">Guide</li>
+            <li class="list">Home</li>
+            <li class="list">Fitur</li>
+            <li class="list">Profile</li>
+            <li class="list">Intruction</li>
         </ul> 
         </div> 
             <div class="main">
@@ -198,7 +189,7 @@
                 </div>
                 <div class="container3">
                 <div class="topic">
-                    <img class="sampah" src="drainase.jpg" alt="">
+                    <img class="drainase" src="drainase.jpg" alt="">
                     <div class="text-container">
                     <h1 class="text2">Penyumbatan Drainase</h1>
                     <p class="description">Layanan untuk melaporkan adanya <br> Penyumbatan Drainase.</p>
@@ -215,14 +206,16 @@
                     </h4>
                 <p class="des">Sampah seperti plastik, kertas, botol, dan benda-benda padat 
                     lainnya yang dibuang sembarangan dapat menyumbat saluran drainase. </p></div>
-                    
-                    
                 </div>
                 <div class="lapor">
-                    <h5>Melaporkan <img class="lapor" src="./Melaporkan.png" alt=""></h5>
+                    <button onclick="Melaporkan()" style="background-color: darkblue; color: white;">Melaporkan</button>
                 </div>
             </div>
-            
         </div>
+        <script>
+            function Melaporkan() {
+                window.location.href = "Peta.html";
+            }
+        </script>
 </body>
 </html>

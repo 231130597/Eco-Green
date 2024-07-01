@@ -38,7 +38,11 @@
         h4{
             height: 5px;
             margin: 15px;
+            text-align: left;
+            margin-left: 50px;
+            margin-top: -40px;
         }
+
         img.awan{
             width: 150px;
             height: 150px;
@@ -46,14 +50,26 @@
             margin-left: 20px;
         }
         img.sampah{
-            width: 200px;
-            height: 200px;
+            width: 40px;
+            height: 40px;
             border-radius: 20px;
             margin-right: 25px;
         }
+        img.call{
+            width: 45px;
+            height: 45px;
+            margin-left: -50px;
+            margin-top: 50px;
+        }
+        img.star1{
+            width: 40px;
+            height: 40px;
+            margin-left: 455px;
+            margin-top: -185px;
+        }
         div.side2{
             height: 700px;
-            background-color: rgb(206, 203, 186);
+            background-color: rgb(236, 255, 173);
             margin: 0;
         }
         div.other{
@@ -71,7 +87,6 @@
         div.container2{
             display: flex;
             text-align: center;
-            margin-left: 200px;
         }
         div.text-container{
             display: flex;
@@ -85,7 +100,7 @@
         }
         div.search{
             margin: 10px;
-            width: 950px;
+            width: 850px;
             height: 30px;
             margin-top: 20px;
             margin-left: 20px;
@@ -95,31 +110,33 @@
         }
         div.topic{
             display: flex;
-            width: 950px;
+            width: 700px;
             height: 200px;
-            margin-top: 25px;
-            margin-left: 20px;
+            margin-top: 10px;
+            margin-left: 100px;
             border: 2px solid rgb(206, 203, 186);
             background-color: rgb(206, 203, 186);
             border-radius: 20px;
         }
         div.t1{
-            width: 205px;
-            height: 250px;
+            width: 700px;
+            height: 100px;
             margin-top: 25px;
-            margin-left: 20px;
-            border: 2px solid rgb(206, 203, 186);
-            background-color: rgb(206, 203, 186);
-            border-radius: 20px;
+            margin-left: 100px;
+            border: 2px solid white;
+            background-color: white;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
         }
         div.t2{
-            width: 205px;
-            height: 250px;
-            margin-top: 25px;
-            margin-left: 40px;
+            width: 700px;
+            height: 100px;
+            margin-top: 129px;
+            margin-left: -704px;
             border: 2px solid rgb(206, 203, 186);
             background-color: rgb(206, 203, 186);
-            border-radius: 20px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
         }
 
         p.text{
@@ -128,18 +145,35 @@
 
         }
         h1.text2{
-            font-size: 30px;
+            font-size: 20px;
+        }
+        h1.text3{
+            font-size: 20px;
+            margin-top: -35px;
+        }
+        h1.text4{
+            font-size: 20px;
+            margin-left: 500px;
+            margin-top: -30px;
         }
         p.description{
-            line-height: 15px;
+            font-size: 15px;
+            margin-left: -60px;
+            margin-top: 0px;
+        }
+        img.t2{
+            width: 30px;
+            height: 30px;
+            margin-left: -650px;
         }
         img.t1{
             width: 30px;
             height: 30px;
         }
         img.t{
-            width: 100px;
-            height: 100px;
+            width: 50px;
+            height: 50px;
+            margin-left: -650px;
         }
         h3.center{
             text-align: center;
@@ -148,16 +182,17 @@
             text-align: center;
         }
         p.des{
-            margin-top: 20px;
-            font-size: 13px;
-            text-align: center;
+            margin-top: 34px;
+            font-size: 15px;
+            text-align: left;
             line-height: 15px;
         }
         
         p.descc{
             margin-top: 34px;
-            font-size: 12px;
-            text-align: center;
+            font-size: 15px;
+            text-align: left;
+            margin-left: 10px;
         }
         img.lapor{
             width: 25px;
@@ -169,16 +204,37 @@
             height: 30px;
             margin-top: 40px;
             margin-left: 350px;
-           
+            background-color: greenyellow;
             border-radius: 10px;
         }
         h5{
             color: white;
         }
-        a{
-        display: block;
-        text-decoration: none;
-        color: #333;
+        h2.laporan{
+            margin-left: 100px;
+            margin-top: 0px;
+            font-size: 30px;
+            color: white;
+        }
+        h2.tanggal{
+            font-style: 1px;
+            margin-left: 100px;
+            margin-top: -20px;
+            color: white;
+        }
+        h4.file{
+            margin-top: -30px;
+        }
+        h5.proses{
+            color: black;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        h6.berhasil{
+            margin-left: 150px;
+            font-size: 15px;
+            margin-top: 2px;
+            color: white;
         }
     </style>
     <title>Document</title>
@@ -189,13 +245,13 @@
             <div class="other">
                 <img class="awan" src="./awan.jpeg" alt="">
                 <h3 class="center">32°C</h3>
-                <h4 class="center">Berawan</h4>
+                <h4 class="center" style="margin-top: 20px; margin-left: 10px;">Berawan</h4>
             </div>
         <ul class="list">
-            <li class="list"><a href="home.html">Home</a></li>
-            <li class="list"><a href="page2.html">Fitur</a></li>
-            <li class="list"><a href="Profile.html">Profile</a></li>
-            <li class="list"><a href="Instruction.html">Instruction</a></li>
+        <li class="list">Home</li>
+        <li class="list">Fitur</li>
+        <li class="list">Profile</li>
+        <li class="list">Instruction</li>
         </ul> 
         </div> 
             <div class="main">
@@ -203,34 +259,38 @@
                     <p class="text">Search</p>
                 </div>
                 <div class="container3">
+                    <h2 class="laporan">Laporan</h2>
+                    <h2 class="tanggal">18 Mey, 12:28</h2>
                 <div class="topic">
-                    <img class="sampah" src="LimbahIndustri.png" alt="">
+                    <img class="sampah" src="profilepelapor1.png" alt="">
                     <div class="text-container">
-                    <h1 class="text2">Limbah Industri</h1>
-                    <p class="description">Layanan untuk melaporkan dan memantau <br> terjadinya Limbah Industri.</p>
+                    <h1 class="text2">Nicholas (Pelapor)</h1>
+                    <p class="description">Telah melaporkan 9 kejadian <br> 8 laporan berhasil, 1 laporan gagal</p>
+                    <img class="call" src="call.png" alt="">
+                    <h1 class="text3" >+62 823 7009 8828</h1>
+                    <img class="star1" src="star1.png" alt="">
+                    <h1 class="text4">3.5</h1>
                 </div>
             </div>                
             </div>
                 <div class="container2">
-                    <div class="t1"><img class="t" src="Pabrik.png" alt="">
-                    <h4 class="head">Penyebab Limbah Industri</h4>
-                <p class="descc">Penggunaan bahan baku yang tidak sepenuhnya terpakai atau terpakai sebagian dalam proses produksi menghasilkan limbah.</p></div>
-                    <div class="t2"><img class="t" src="Racun.png" alt="">
-                    <h4 class="head">Penyebab adanya racun</h4>
-                <p class="des">Penggunaan bahan kimia berbahaya seperti logam berat (misalnya, timbal, merkuri, kadmium), pestisida, herbisida, dan bahan kimia industri lainnya dapat mencemari limbah industri. </p></div>
+                    <div class="t1"><img class="t" src="peta1.png" alt="">
+                    <h4 class="head">Lapangan Benteng</h4>
+                <p class="descc">Jl. Pengadilan No.Kel, Petisah Tengah, Kec. Medan Petisah, Kota Medan, Sumatera Utara 20236</p></div>
+                    <div class="t2"><img class="t2" src="plus.png" alt="">
+                    <h4 class="file">satu file telah tertambahkan 
+                    </h4>
+                <p class="des"><b>Deskripsi :</b> <br>
+                    Adanya sampah di depan gerbang Lapangan Benteng, terdapat bungkusan makanan dan bungkusan minuman yang bertumpuk di selokan deopan gerbang Lapangan Benteng. </p></div>
                     
                     
                 </div>
+                <h6 class="berhasil">Terima kasih sudah melaporkan, kami akan segera menuju ke tempat lokasi sampah tersebut.</h6>
                 <div class="lapor">
-                    <button onclick="Melaporkan()" style="background-color: darkblue; color: white;">Melaporkan</button>
+                    <h5 class="proses">Berhasil</h5>
                 </div>
             </div>
             
         </div>
-        <script>
-            function Melaporkan() {
-                window.location.href = "PetaLimbahIndustri.html";
-            }
-        </script>
 </body>
 </html>
