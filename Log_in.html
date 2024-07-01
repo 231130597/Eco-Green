@@ -10,7 +10,7 @@
             height: 800px;
             max-height: max-content;
             margin: 0 auto;
-            background-color: beige;
+            background-color: rgb(206, 203, 186);
             padding: 20px;
         }
         div.border{
@@ -23,6 +23,7 @@
             border-radius: 20px;
         }
         div.box{
+            overflow: auto;
             width: 90%;
             height: 25px;
             border: 1px solid darkgreen;
@@ -46,27 +47,38 @@
         }
         h1.text{
             text-align: center;
+            color: black;
         }
         h2.text{
             text-align: center;
-            color: white;
+            color: black;
         }
         p.text{
             margin-left: 20px;
             font-weight: bolder;
         }
-        p.text2{
-            width: 40px;
+        a.button{
+            display: inline-block;
+            text-decoration: none;
+            border: 1px solid darkgreen;
+            border-radius: 5px;
+            background-color: darkgreen;
+            margin-left: 10px;
+            width: 95%;
             height: 40px;
-            background-color: blue;
-            border-radius: 50%;
             text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        p.text2{
+            margin-top: 10px;
+            color: white;
         }
     </style>
 </head>
 <body>
     <div class="container">
-    <h1 class="text" style="color: white;">
+    <h1 class="text">
         Welcome Back
     </h1>
     <h2 class="text">Log in to continue</h2>
@@ -74,20 +86,19 @@
         <h1 class="text">
             Log in
         </h1>
-        <div class="box">
-            Email
+        <p class="text">Email :</p>
+        <div class="box" contenteditable="true"> 
         </div>
-        <div class="box">
-            Password
+        <p class="text">Password :</p>
+        <div class="box" contenteditable="true">   
         </div>
-        <div class="box2">
-            Log In
-        </div>
+        <a href="home.html"><div class="box2">Log In</div></a>
         <p class="text">Don't have an account?</p>
-        <div class="box2">
-            Sign Up
+            <a href="Sign_up.html" class="button">
+            <p class="text2">Sign Up</p>
+        </a>
         </p>
-    </div>
+    
 </div>
 </body>
 </html>
