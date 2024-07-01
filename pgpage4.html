@@ -78,16 +78,7 @@
             background-color: white;
             border-radius: 20px;
         }
-        div.topic{
-            display: flex;
-            width: 950px;
-            height: 200px;
-            margin-top: 25px;
-            margin-left: 20px;
-            border: 2px solid rgb(206, 203, 186);
-            background-color: rgb(206, 203, 186);
-            border-radius: 20px;
-        }
+        
         p.text{
             margin: 10px;
             margin-top: 6px;
@@ -115,7 +106,7 @@
             margin-top: 10px;
         }
 
-        .review-item .reviewer-name {
+        h3.reviewer-name {
             font-weight: bold;
             font-size: 18px;
             margin-bottom: 10px;
@@ -130,15 +121,48 @@
             background-color: rgb(206, 203, 186);
             border-radius: 20px;
             width: 950px;
+            margin-bottom: 30px;
         }
         h1{
             font-size: larger;
             text-align: center;
         }
+        span{
+            color: red;
+        }
+        img.kateg{
+            width: 180px;
+            height: 180px;  
+            margin-top: 11px;
+            margin-left: 390px;
+        }
+        .lapor {
+            background-color: rgb(176, 187, 212);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;   
+        }
+        img.telp{
+            width: 30px;
+            height: 30px;
+        }
+        p.telp{
+            margin-top: -30px;
+            margin-left: 40px;
+        }
+        div.container7{
+            margin-bottom: 10px;
+            width: 150px;
+            height: 40px;
+            background-color: black;
+            margin-left: 400px;
+            color: white;
+            text-align: center;  
+        }
         a{
-            display: block;
-            text-decoration: none;
-            color: #333;
+        display: block;
+        text-decoration: none;
+        color: #333;
         }
     </style>
 </head>
@@ -154,7 +178,7 @@
             <li class="list"><a href="home.html">Home</a></li>
             <li class="list"><a href="page2.html">Fitur</a></li>
             <li class="list"><a href="Profile.html">Profile</a></li>
-            <li class="list"><a href="Instruction.html">Instruction</a></li>
+            <li class="list"><a href="Instruction.html">Intruction</a></li>
         </ul> 
         </div> 
             <div class="main">
@@ -162,55 +186,33 @@
                     <p class="text">Search</p>
                 </div>
                 <div class="container2">
-                    <h1>Laporan</h1>
+                    <h1>Penelitian</h1>
+                    <img class="kateg" src="./pakaian.png" alt="">
                     <div class="review-item">
-                        <h3 class="reviewer-name">Felicia</h3>
                         <p class="review-text">
-                            Lokasi: Sun Plaza <br>
-                            Tanggal: 15 May, 17:28 <br>
-                            Komentar: "Sampah di area taman belakang sangat banyak dan tidak terawat. Mohon segera dibersihkan."
+                            15 May, 17:28 <br>
+                            <span>No. 00010</span> <br>
+                            Nama Produk   : Kemeja <br>
+                            Jenis Produk  : Baju <br>
+                            Qty Produk    : 30pcs <br>
+                            Kerugian      : Rp. 9.000.000,-
                         </p>
                     </div>
-            
-                    <div class="review-item">
-                        <h3 class="reviewer-name">Jason</h3>
-                        <p class="review-text">
-                            Lokasi: Tjong A Fie Mansion <br>
-                            Tanggal: 14 May, 08:13 <br>
-                            Komentar: "Ada banyak sampah berserakan di area parkir. Tolong ditindaklanjuti."
-                        </p>
-                    </div>
-            
-                    <div class="review-item">
-                        <h3 class="reviewer-name">Anton</h3>
-                        <p class="review-text">
-                            Lokasi: Deli Park<br>
-                            Tanggal: 14 May, 07:01 <br>
-                            Komentar: "Tempat sampah di food court sudah penuh dan tidak dibuang. Harap dikosongkan."
-                        </p>
-                    </div>
-            
-                    <div class="review-item">
-                        <h3 class="reviewer-name">Davina</h3>
-                        <p class="review-text">
-                            Lokasi: Medan Zoo (Kebun Binatang Medan) <br>
-                            Tanggal: 13 May, 20:47 <br>
-                            Komentar: "Banyak sampah plastik di area kandang hewan. Mohon ditingkatkan kebersihannya."
-                        </p>
-                    </div>
-            
-                    <div class="review-item">
-                        <h3 class="reviewer-name">Jerry </h3>
-                        <p class="review-text">
-                            Lokasi: Istana Maimun <br>
-                            Tanggal: 13 May, 11:19 <br>
-                            Komentar: "Tempat sampah di taman istana tidak ada tutupnya. Saran saya, tambahkan tutup sampah agar lebih rapi dan terhindar dari hewan liar."
-                        </p>
-                    </div>
+                <div class="lapor">
+                    <h3 class="reviewer-name">Felicia (Pelapor)</h3>
+                    <p>Sedang melaporkan produk gagal yang akan dilakukan penelitian dengan No. 00010.
+                        Pelaporan yang pertama.</p>
+                    <img class="telp" src="./telp.png" alt="">  
+                    <p class="telp">+62 8123 4567 891</p>
+                </div>    
+                <div class="container7">
+                    <p>Sedang Diproses</p>
                 </div>
-            </div>
-            </div>  
+                </div>
+                </div>
+            
         </div>
+        
         
 </body>
 </html>

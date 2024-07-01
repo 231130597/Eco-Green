@@ -53,7 +53,7 @@
         }
         div.side2{
             height: 700px;
-            background-color: beige;
+            background-color: rgb(206, 203, 186);
             margin: 0;
         }
         div.other{
@@ -71,6 +71,7 @@
         div.container2{
             display: flex;
             text-align: center;
+            margin-left: 250px;
         }
         div.text-container{
             display: flex;
@@ -98,8 +99,8 @@
             height: 200px;
             margin-top: 25px;
             margin-left: 20px;
-            border: 2px solid beige;
-            background-color: beige;
+            border: 2px solid rgb(206, 203, 186);
+            background-color: rgb(206, 203, 186);
             border-radius: 20px;
         }
         div.t1{
@@ -107,8 +108,8 @@
             height: 250px;
             margin-top: 25px;
             margin-left: 20px;
-            border: 2px solid beige;
-            background-color: beige;
+            border: 2px solid rgb(206, 203, 186);
+            background-color: rgb(206, 203, 186);
             border-radius: 20px;
         }
         div.t2{
@@ -116,8 +117,8 @@
             height: 250px;
             margin-top: 25px;
             margin-left: 40px;
-            border: 2px solid beige;
-            background-color: beige;
+            border: 2px solid rgb(206, 203, 186);
+            background-color: rgb(206, 203, 186);
             border-radius: 20px;
         }
         div.t3{
@@ -125,8 +126,8 @@
             height: 250px;
             margin-top: 25px;
             margin-left: 40px;
-            border: 2px solid beige;
-            background-color: beige;
+            border: 2px solid rgb(206, 203, 186);
+            background-color: rgb(206, 203, 186);
             border-radius: 20px;
         }
         div.t4{
@@ -134,8 +135,8 @@
             height: 250px;
             margin-top: 25px;
             margin-left: 40px;
-            border: 2px solid beige;
-            background-color: beige;
+            border: 2px solid rgb(206, 203, 186);
+            background-color: rgb(206, 203, 186);
             border-radius: 20px;
         }
         p.text{
@@ -150,8 +151,8 @@
             line-height: 16px;
         }
         img.t{
-            width: 205px;
-            height: 105px;
+            width: 100px;
+            height: 100px;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
         }
@@ -176,8 +177,7 @@
             height: 30px;
             margin-top: 40px;
             margin-left: 400px;
-            background-color: rgb(22, 24, 123);
-            border-radius: 10px;
+            border-radius: 15px;
         }
         h5{
             color: white;
@@ -188,7 +188,11 @@
             height: 25px;
             text-align: center; 
         }
-        
+        a{
+        display: block;
+        text-decoration: none;
+        color: #333;
+        }
     </style>
 </head>
 <body>
@@ -200,10 +204,10 @@
                 <h4 class="center">Berawan</h4>
             </div>
         <ul class="list">
-        <li class="list">Home</li>
-        <li class="list">Fitur</li>
-        <li class="list">Profile</li>
-        <li class="list">Guide</li>
+            <li class="list"><a href="home.html">Home</a></li>
+            <li class="list"><a href="page2.html">Fitur</a></li>
+            <li class="list"><a href="Profile.html">Profile</a></li>
+            <li class="list"><a href="Instruction.html">Instruction</a></li>
         </ul> 
         </div> 
             <div class="main">
@@ -221,20 +225,25 @@
             <br>               
             </div>
                 <div class="container2">
-                    <div class="t1"><img class="t" src="./laporan.jpg" alt="">
+                    <a href="page4.html"><div class="t1"><img class="t" src="./laporan.png" alt="">
                     <h4 class="head">Laporan</h4>
-                <p class="des">Menyimpan laporan yang dilaporkan oleh pelapor. Dapat dilihat oleh publik laporan yang terjadi.</p></div>
-                    <div class="t2"><img class="t" src="./efek sampah.jpg" alt="">
+                <p class="des">Menyimpan laporan yang dilaporkan oleh pelapor. Dapat dilihat oleh publik laporan yang terjadi.</p></div></a>
+                    <div class="t2"><img class="t" src="./efek_sampah.png" alt="">
                     <h4 class="head">Efek pembuangan sampah sembarangan</h4>
                 <p class="des">Menyebabkan pencemaran lingkungan yang signifikan. Sampah yang tercecer di jalan, sungai, atau lahan terbuka 
                     dapat menciptakan pemandangan yang tidak indah, merusak ekosistem, serta mengganggu kehidupan flora dan fauna.
                 </div>
                 </div>
                 <div class="lapor">
-                    <h5>Melaporkan <img class="lapor" src="./lapor.png" alt=""></h5>
+                    <button onclick="Melaporkan()" style="background-color: darkblue; color: white;">Melaporkan</button>
                 </div>
             </div>
             
         </div>
+        <script>
+            function Melaporkan() {
+                window.location.href = "Page5.html";
+            }
+        </script>
 </body>
 </html>

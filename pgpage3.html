@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Penelitian Produk Gagal</title>
+    <title>Laporan Pembuangan Sampah Sembarangan</title>
     <style>
         li.list {
             list-style: none;
@@ -40,20 +40,22 @@
             height: 5px;
             margin: 15px;
         }
+        p.description{ 
+            margin-top: 2px;
+            margin-left: 470px;
+            color: white    ;
+            border-radius: 5px;
+        }
         img.awan{
             width: 150px;
             height: 150px;
             margin: 5px;
             margin-left: 20px;
         }
-        img.pengolaan{
-            width: 190px;
-            height: 190px;  
-            margin-right: 25px;
-        }
+        
         div.side2{
-            height: 700px;
-            background-color: beige;
+            height: 900px;
+            background-color: rgb(206, 203, 186);
             margin: 0;
         }
         div.other{
@@ -68,21 +70,9 @@
         div.container{
             display: flex;
         }
-        div.container2{
-            width: 950px;
-            margin-top: 25px;
-            margin-left: 20px;
-            border: 2px solid beige;
-            background-color: beige;
-            border-radius: 20px;
-        }
-        div.text-container{
-            display: flex;
-            flex-direction: column;
-        }
         div.main{
             width: 100%;
-            height: 700px;
+            height: 900px;
             background-color: darkgreen;
             margin: 0;
         }
@@ -96,70 +86,10 @@
             background-color: white;
             border-radius: 20px;
         }
-        div.topic{
-            display: flex;
-            width: 400px;
-            height: 200px;
-            margin-top: 25px;
-            margin-left: 300px;
-            border: 2px solid beige;
-            background-color: beige;
-            border-radius: 20px;
-        }
-        div.t1{
-            width: 205px;
-            height: 250px;
-            margin-top: 25px;
-            margin-left: 20px;
-            border: 2px solid beige;
-            background-color: beige;
-            border-radius: 20px;
-        }
-        div.t2{
-            width: 205px;
-            height: 250px;
-            margin-top: 25px;
-            margin-left: 40px;
-            border: 2px solid beige;
-            background-color: beige;
-            border-radius: 20px;
-        }
-        div.t3{
-            width: 205px;
-            height: 250px;
-            margin-top: 25px;
-            margin-left: 40px;
-            border: 2px solid beige;
-            background-color: beige;
-            border-radius: 20px;
-        }
-        div.t4{
-            width: 205px;
-            height: 250px;
-            margin-top: 25px;
-            margin-left: 40px;
-            border: 2px solid beige;
-            background-color: beige;
-            border-radius: 20px;
-        }
+        
         p.text{
             margin: 10px;
             margin-top: 6px;
-
-        }
-        h1.text2{
-            font-size: 30px;
-            margin-right: 50px;
-            margin: 80px;
-        }
-        p.description{
-            line-height: 16px;
-        }
-        img.t{
-            width: 205px;
-            height: 105px;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
         }
         h3.center{
             text-align: center;
@@ -167,33 +97,55 @@
         h4.center{
             text-align: center;
         }
-        h4.head{
-            margin-top: 0;
-        }
-        p.des{
-            margin-top: 40px;
-            font-size: 10px;
-            text-align: center;
-            line-height: 13px;
-        }
-        img.lapor{
-            width: 25px;
-            height: 25px;
-        }
-        div.lapor{
-            text-align: center;
-            width: 200px;
-            height: 30px;
-            margin-top: 40px;
+        img.kateg{
+            width: 180px;
+            height: 180px;  
+            margin-top: 11px;
             margin-left: 400px;
-            background-color: rgb(22, 24, 123);
-            border-radius: 10px;
         }
-        h5{
+        div.border{
+            width: 70%;
+            margin: 10px;
+            margin-top: 1px;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        div.box{
+            width: 70%;
+            height: 25px;
+            background-color: white;
+            margin: 5px;
+            border-radius: 5px;
+            color: black;
+            padding: 20px;
+        }
+        p.boxx{
             color: white;
+            margin: auto;
+        }
+        div.des{
+            width: 70%;
+            height: 80px;
+            background-color: white;
+            margin: 5px;
+            border-radius: 5px;
+            color: black;
+            padding: 20px;
+        }
+        a{
+        display: block;
+        text-decoration: none;
+        color: #333;
+        }
+        .upload-container {
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            background-color: transparent;
+            margin-top: -100px;
+            margin-left: 300px;
         }
     </style>
-    <title>Document</title>
 </head>
 <body>
     <div class="container">
@@ -204,30 +156,41 @@
                 <h4 class="center">Berawan</h4>
             </div>
         <ul class="list">
-        <li class="list">Home</li>
-        <li class="list">Fitur</li>
-        <li class="list">Profile</li>
-        <li class="list">Guide</li>
+            <li class="list"><a href="home.html">Home</a></li>
+            <li class="list"><a href="page2.html">Fitur</a></li>
+            <li class="list"><a href="Profile.html">Profile</a></li>
+            <li class="list"><a href="Instruction.html">Intruction</a></li>
         </ul> 
         </div> 
             <div class="main">
                 <div class="search">
                     <p class="text">Search</p>
                 </div>
-            <div class="container3">
-                <div class="topic">
-                    <img class="pakaian" src="./pakaian.png" alt="">
-                    <div class="text-container">
-                    <h1 class="text2">  Pakaian</h1>
+                <div class="container3">
+                        <img class="kateg" src="./pakaian.png" alt="">
+                        <div class="text-container">
+                        <br>
+                        <p class="description">Pakaian</p>
                 </div>
-            </div>                
-            </div>
-                <div class="container2">
-                    <h3>Produk Gagal</h3>
+                <div class="border">
+                    <p class="boxx">Nama Produk <div class="box" contenteditable="true"> </div></p>
+                    <p class="boxx">Jenis Produk <div class="box" contenteditable="true"> </div> </p>
+                    <p class="boxx">Qty Produk <div class="box" contenteditable="true"> </div></p>
+                    <p class="boxx">Kerugian <div class="box" contenteditable="true"> </div></p>
+                    <p class="boxx">Deskripsi <div class="des" contenteditable="true"> </div></p>
                 </div>
-                
-            </div>
-            
+                <div class="upload-container">
+                  <br>
+                  <button style="background-color: beige;" id="nextButton"><b>Lanjutkan</b></button>
+              </div>
+                <div></div>
+            </div>  
         </div>
-</body>
+        <script>
+              nextButton.addEventListener('click', function() {
+                alert("Laporan telah tersimpan")
+                window.location.href = 'pgpage4.html' });
+        </script>
+        
+    </body>
 </html>

@@ -53,7 +53,7 @@
         }
         div.side2{
             height: 700px;
-            background-color: beige;
+            background-color: rgb(206, 203, 186);
             margin: 0;
         }
         div.other{
@@ -71,6 +71,7 @@
         div.container2{
             display: flex;
             text-align: center;
+            margin-left: 130px;
         }
         div.text-container{
             display: flex;
@@ -98,8 +99,8 @@
             height: 200px;
             margin-top: 25px;
             margin-left: 20px;
-            border: 2px solid beige;
-            background-color: beige;
+            border: 2px solid rgb(206, 203, 186);
+            background-color: rgb(206, 203, 186);
             border-radius: 20px;
         }
         div.t1{
@@ -107,8 +108,8 @@
             height: 250px;
             margin-top: 25px;
             margin-left: 20px;
-            border: 2px solid beige;
-            background-color: beige;
+            border: 2px solid rgb(206, 203, 186);
+            background-color: rgb(206, 203, 186);
             border-radius: 20px;
         }
         div.t2{
@@ -116,8 +117,8 @@
             height: 250px;
             margin-top: 25px;
             margin-left: 40px;
-            border: 2px solid beige;
-            background-color: beige;
+            border: 2px solid rgb(206, 203, 186);
+            background-color: rgb(206, 203, 186);
             border-radius: 20px;
         }
         div.t3{
@@ -125,8 +126,8 @@
             height: 250px;
             margin-top: 25px;
             margin-left: 40px;
-            border: 2px solid beige;
-            background-color: beige;
+            border: 2px solid rgb(206, 203, 186);
+            background-color: rgb(206, 203, 186);
             border-radius: 20px;
         }
         div.t4{
@@ -134,8 +135,8 @@
             height: 250px;
             margin-top: 25px;
             margin-left: 40px;
-            border: 2px solid beige;
-            background-color: beige;
+            border: 2px solid rgb(206, 203, 186);
+            background-color: rgb(206, 203, 186);
             border-radius: 20px;
         }
         p.text{
@@ -150,8 +151,8 @@
             line-height: 16px;
         }
         img.t{
-            width: 205px;
-            height: 105px;
+            width: 100px;
+            height: 100px;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
         }
@@ -180,11 +181,15 @@
             height: 30px;
             margin-top: 40px;
             margin-left: 400px;
-            background-color: rgb(22, 24, 123);
-            border-radius: 10px;
+            border-radius: 15px;
         }
         h5{
             color: white;
+        }
+        a{
+        display: block;
+        text-decoration: none;
+        color: #333;
         }
     </style>
     <title>Document</title>
@@ -198,10 +203,10 @@
                 <h4 class="center">Berawan</h4>
             </div>
         <ul class="list">
-        <li class="list">Home</li>
-        <li class="list">Fitur</li>
-        <li class="list">Profile</li>
-        <li class="list">Guide</li>
+            <li class="list"><a href="home.html">Home</a></li>
+            <li class="list"><a href="page2.html">Fitur</a></li>
+            <li class="list"><a href="Profile.html">Profile</a></li>
+            <li class="list"><a href="Instruction.html">Instruction</a></li>
         </ul> 
         </div> 
             <div class="main">
@@ -218,24 +223,29 @@
             </div>                
             </div>
                 <div class="container2">
-                    <div class="t1"><img class="t" src="./laporan.jpg" alt="">
+                    <a href="pgpage5.html"><div class="t1"><img class="t" src="./laporan.png" alt="">
                     <h4 class="head">Laporan</h4>
-                <p class="des">Menyimpan laporan yang dilaporkan. Dapat mengetahui data yang telah dianalisis dan penelitian.</p></div>
-                    <div class="t2"><img class="t" src="./kategori.jpg" alt="">
+                <p class="des">Menyimpan laporan yang dilaporkan. Dapat mengetahui data yang telah dianalisis dan penelitian.</p></div></a>
+                    <a href="pgpage2.html"><div class="t2"><img class="t" src="./kategori.png" alt="">
                     <h4 class="head">Kategori</h4>
                 <p class="des">Fitur untuk melaporkan produk gagal yang terbagi dari beberapa kategori sehingga memudahkan dalam menganalisis dan penelitian
-                </p></div>
-                    <div class="t3"><img class="t" src="./efek sampah.jpg" alt="">
+                </p></div></a>
+                    <div class="t3"><img class="t" src="./dampak.png" alt="">
                     <h4 class="head">Dampak Lingkungan</h4>
                 <p class="des">Pemborosan Sumber Daya Alam, Peningkatan Limbah, Pencemaran Lingkungan, Kerusakan Habitat, Kehilangan Keanekaragaman Hayati, Dampak Pasca-Pemakaian, Kerusakan Infrastruktur</p></div>
                 </div>
                 <div class="lapor">
-                    <h5>Melaporkan <img class="lapor" src="./lapor.png" alt=""></h5>
+                    <button onclick="Melaporkan()" style="background-color: darkblue; color: white;">Melaporkan</button>
                 </div>
                 </div>
                 
             </div>
             
         </div>
+        <script>
+            function Melaporkan() {
+                window.location.href = "pgpage2.html";
+            }
+        </script>
 </body>
 </html>
